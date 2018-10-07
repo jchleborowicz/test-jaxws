@@ -1,0 +1,16 @@
+task generateWsClient(type: Exec) {
+
+    group = 'Generate sources'
+    description = 'Generates web service stubs'
+
+    commandLine(
+            'wsimport',
+            '-s',
+            "${projectDir}/src/main/java",
+            '-Xnocompile',
+            '-b',
+            "${projectDir}/src/main/jaxws/bindings.xml",
+            'http://localhost:8888/ws/person?wsdl'
+    )
+
+}

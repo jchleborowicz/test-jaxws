@@ -1,0 +1,7 @@
+task runServer(type: JavaExec) {
+    group = 'Run'
+    description = 'Executes web service server process'
+
+    main = 'pl.jch.tests.jaxws.server.SOAPPublisher'
+    classpath = sourceSets.main.runtimeClasspath
+}

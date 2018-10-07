@@ -46,8 +46,8 @@ public class SOAPPublisherClient {
 
         getAllPersons(personService);
 
-        System.out.println("\nDeleting person");
-        System.out.println(personService.deletePerson(2));
+//        System.out.println("\nDeleting person");
+//        System.out.println(personService.deletePerson(2));
 
         getAllPersons(personService);
     }
