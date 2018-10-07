@@ -1,4 +1,4 @@
-package pl.jch.tests.jaxws;
+package pl.jch.tests.jaxws.server;
 
 import javax.jws.WebMethod;
 import javax.jws.WebService;
